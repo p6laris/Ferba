@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Images\AlphabetsBar.png" />
+    <None Remove="Assets\Images\AnimalBar.png" />
+    <None Remove="Assets\Images\background.jpg" />
+    <None Remove="Assets\Images\BodyBar.png" />
+    <None Remove="Assets\Images\Close.png" />
+    <None Remove="Assets\Images\ClothesBar.png" />
+    <None Remove="Assets\Images\ColorsBar.png" />
+    <None Remove="Assets\Images\itemsBG.png" />
+    <None Remove="Assets\Images\LeftArrow.png" />
+    <None Remove="Assets\Images\MomentsBar.png" />
+    <None Remove="Assets\Images\NatureBar.png" />
+    <None Remove="Assets\Images\NumbersBar.png" />
+    <None Remove="Assets\Images\RightArrow.png" />
+    <None Remove="Assets\Images\SoundOff.png" />
+    <None Remove="Assets\Images\SoundOn.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\AlphabetsBar.png" />
+    <Resource Include="Assets\Images\AnimalBar.png" />
+    <Resource Include="Assets\Images\background.jpg" />
+    <Resource Include="Assets\Images\BodyBar.png" />
+    <Resource Include="Assets\Images\Close.png" />
+    <Resource Include="Assets\Images\ClothesBar.png" />
+    <Resource Include="Assets\Images\ColorsBar.png" />
+    <Resource Include="Assets\Images\itemsBG.png" />
+    <Resource Include="Assets\Images\LeftArrow.png" />
+    <Resource Include="Assets\Images\MomentsBar.png" />
+    <Resource Include="Assets\Images\NatureBar.png" />
+    <Resource Include="Assets\Images\NumbersBar.png" />
+    <Resource Include="Assets\Images\RightArrow.png" />
+    <Resource Include="Assets\Images\SoundOff.png" />
+    <Resource Include="Assets\Images\SoundOn.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,146 @@
+﻿<Window x:Class="Ferba.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ferba"
+        mc:Ignorable="d"
+        Title="Ferba" Height="720" Width="1080"
+        WindowStyle="None" ResizeMode="NoResize"
+        WindowState="Normal" MouseDown="Window_MouseDown">
+    
+    <Window.Background>
+        <ImageBrush 
+            ImageSource="./Assets/Images/background.jpg" 
+            Stretch="UniformToFill"
+            Opacity="0.6"/>
+    </Window.Background>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+
+            <Image 
+                x:Name="RightArrowPic"
+                Grid.Column="2"
+                Source="./Assets/Images/RightArrow.png"
+                MouseDown="RightArrowPic_MouseDown"
+                />
+            <Image 
+                x:Name="LeftArrowPic"
+                Grid.Column="0"
+                Source="./Assets/Images/LeftArrow.png"
+                MouseDown="LeftArrowPic_MouseDown"/>
+        </Grid>
+        <Image 
+            x:Name="ClosePic" 
+            Grid.Row="0" 
+            Grid.Column="0" 
+            Source="./Assets/Images/Close.png"
+            MouseDown="ClosePic_MouseDown"
+            Stretch="Uniform"/>
+        <Image 
+            x:Name="SoundPic"
+            Grid.Row="0"
+            Grid.Column="2"
+            Source="./Assets/Images/SoundOff.png"
+            MouseDown="SoundPic_MouseDown"/>
+        <Image x:Name="ItemBG"
+               Grid.Row="1"
+               Grid.Column="1"
+               Source="./Assets/Images/ItemsBG.png"
+               Stretch="Uniform"/>
+        <TabControl x:Name="ItemTabs" Grid.Row="1" 
+                    Grid.Column="1" 
+                    Background="Transparent" 
+                    BorderBrush="Transparent"
+                    Width="450" 
+                    Height="290" 
+                    Margin="0,30,0,0">
+            <TabControl.ItemContainerStyle>
+                <Style TargetType="{x:Type TabItem}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                </Style>
+            </TabControl.ItemContainerStyle>
+            <TabItem x:Name="Items1">
+                <Grid Margin="25,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image
+                        x:Name="AlphabetsBarPic"
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Source="./Assets/Images/AlphabetsBar.png"/>
+                    <Image
+                        x:Name="AnimalBarPic"
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Source="./Assets/Images/AnimalBar.png"/>
+                    <Image 
+                        x:Name="ClothesBarPic"
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        Source="./Assets/Images/ClothesBar.png"/>
+                    <Image 
+                        x:Name="NumbersBarPic"
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Source="./Assets/Images/NumbersBar.png"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Items2">
+                <Grid Margin="25,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image
+                        x:Name="ColorsBarPic"
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Source="./Assets/Images/ColorsBar.png"/>
+                    <Image
+                        x:Name="BodyBarPic"
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Source="./Assets/Images/BodyBar.png"/>
+                    <Image 
+                        x:Name="MomentsBarPic"
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        Source="./Assets/Images/MomentsBar.png"/>
+                    <Image 
+                        x:Name="NatureBarPic"
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Source="./Assets/Images/NatureBar.png"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+    
+</Window>

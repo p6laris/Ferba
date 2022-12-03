@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Audio\Baz.wav" />
     <None Remove="Assets\Images\AlphabetsBar.png" />
     <None Remove="Assets\Images\AnimalBar.png" />
     <None Remove="Assets\Images\background.jpg" />
@@ -15,14 +16,21 @@
     <None Remove="Assets\Images\Close.png" />
     <None Remove="Assets\Images\ClothesBar.png" />
     <None Remove="Assets\Images\ColorsBar.png" />
+    <None Remove="Assets\Images\Home.png" />
     <None Remove="Assets\Images\itemsBG.png" />
     <None Remove="Assets\Images\LeftArrow.png" />
     <None Remove="Assets\Images\MomentsBar.png" />
     <None Remove="Assets\Images\NatureBar.png" />
     <None Remove="Assets\Images\NumbersBar.png" />
+    <None Remove="Assets\Images\ObjectsBG.png" />
+    <None Remove="Assets\Images\Objects\Baz.jpg" />
     <None Remove="Assets\Images\RightArrow.png" />
     <None Remove="Assets\Images\SoundOff.png" />
     <None Remove="Assets\Images\SoundOn.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\Audio\Baz.wav" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,11 +41,14 @@
     <Resource Include="Assets\Images\Close.png" />
     <Resource Include="Assets\Images\ClothesBar.png" />
     <Resource Include="Assets\Images\ColorsBar.png" />
+    <Resource Include="Assets\Images\Home.png" />
     <Resource Include="Assets\Images\itemsBG.png" />
     <Resource Include="Assets\Images\LeftArrow.png" />
     <Resource Include="Assets\Images\MomentsBar.png" />
     <Resource Include="Assets\Images\NatureBar.png" />
     <Resource Include="Assets\Images\NumbersBar.png" />
+    <Resource Include="Assets\Images\ObjectsBG.png" />
+    <Resource Include="Assets\Images\Objects\Baz.jpg" />
     <Resource Include="Assets\Images\RightArrow.png" />
     <Resource Include="Assets\Images\SoundOff.png" />
     <Resource Include="Assets\Images\SoundOn.png" />

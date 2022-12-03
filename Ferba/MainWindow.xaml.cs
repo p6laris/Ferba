@@ -14,6 +14,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Ferba.Models;
+using System.IO.Packaging;
 
 namespace Ferba
 {
@@ -24,11 +26,16 @@ namespace Ferba
     public partial class MainWindow : Window
     {
         SoundManager _bgSound;
-        int _tabIndex = 1;
+        MediaPlayer _player;
+        public Lazy<List<Items>> AnimalItems { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+            //Lazy Init
+            AnimalItems = new Lazy<List<Items>>(Data.Data.GetData());
+            DataContext = this;
             //Sound
+            _player = new();
             _bgSound = new(Properties.Resources.Music, true);
             _bgSound.PlaySound();
         }
@@ -81,6 +88,23 @@ namespace Ferba
                 if (ItemTabs.SelectedIndex >= 1)
                     --ItemTabs.SelectedIndex;
             }
+        }
+
+        private void AnimalBarPic_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MainTabs.SelectedIndex = 1;
+            _bgSound.StopSound();
+        }
+
+        private void HomePic_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MainTabs.SelectedIndex = 0;
+
+        }
+
+        private void SoundPlay_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            BazAudio.Play();
         }
     }
 }

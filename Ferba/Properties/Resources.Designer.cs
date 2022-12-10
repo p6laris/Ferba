@@ -72,6 +72,15 @@ namespace Ferba.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream autumn {
+            get {
+                return ResourceManager.GetStream("autumn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Bard {
             get {
                 return ResourceManager.GetStream("Bard", resourceCulture);
@@ -450,6 +459,24 @@ namespace Ferba.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream spring {
+            get {
+                return ResourceManager.GetStream("spring", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream summer {
+            get {
+                return ResourceManager.GetStream("summer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream sur {
             get {
                 return ResourceManager.GetStream("sur", resourceCulture);
@@ -471,6 +498,15 @@ namespace Ferba.Properties {
         internal static System.IO.UnmanagedMemoryStream teeth {
             get {
                 return ResourceManager.GetStream("teeth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream winter {
+            get {
+                return ResourceManager.GetStream("winter", resourceCulture);
             }
         }
         

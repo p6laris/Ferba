@@ -121,6 +121,9 @@
   <data name="Asman" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Asman.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="autumn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\autumn.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Bard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bard.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -247,6 +250,12 @@
   <data name="shin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shin.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="spring" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spring.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="summer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\summer.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="sur" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sur.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -255,6 +264,9 @@
   </data>
   <data name="teeth" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\teeth.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="winter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\winter.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Yak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Yak.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

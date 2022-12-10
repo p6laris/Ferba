@@ -42,6 +42,10 @@
     <None Remove="Assets\Images\Objects\Colors\zerd.jpg" />
     <None Remove="Assets\Images\Objects\Masi.jpg" />
     <None Remove="Assets\Images\Objects\Maymun.jpg" />
+    <None Remove="Assets\Images\Objects\Moments\autumn.jpg" />
+    <None Remove="Assets\Images\Objects\Moments\spring.jpg" />
+    <None Remove="Assets\Images\Objects\Moments\summer.jpg" />
+    <None Remove="Assets\Images\Objects\Moments\winter.jpg" />
     <None Remove="Assets\Images\Objects\Mreshk.jpg" />
     <None Remove="Assets\Images\Objects\Nature\Asman.jpg" />
     <None Remove="Assets\Images\Objects\Nature\Bard.jpg" />
@@ -108,6 +112,10 @@
     <Resource Include="Assets\Images\Objects\Colors\zerd.jpg" />
     <Resource Include="Assets\Images\Objects\Masi.jpg" />
     <Resource Include="Assets\Images\Objects\Maymun.jpg" />
+    <Resource Include="Assets\Images\Objects\Moments\autumn.jpg" />
+    <Resource Include="Assets\Images\Objects\Moments\spring.jpg" />
+    <Resource Include="Assets\Images\Objects\Moments\summer.jpg" />
+    <Resource Include="Assets\Images\Objects\Moments\winter.jpg" />
     <Resource Include="Assets\Images\Objects\Mreshk.jpg" />
     <Resource Include="Assets\Images\Objects\Nature\Asman.jpg" />
     <Resource Include="Assets\Images\Objects\Nature\Bard.jpg" />

@@ -65,6 +65,11 @@ namespace Ferba.Data
                 new(){Name="سەر", Description="سەرت بەشێکی گرنگی لەشن و مێشکیان تێدایە", Sound = Properties.Resources.head, Image = new(new Uri("./Assets/Images/Objects/Body/sar.jpg",UriKind.Relative))},
                 new(){Name="ددان", Description="ددانەکانت یارمەتیت دەن لە خواردنی خۆراک", Sound = Properties.Resources.teeth, Image = new(new Uri("./Assets/Images/Objects/Body/ddan.jpg",UriKind.Relative))},
                 new(){Name="لووت", Description="لووتت یەرمەتیت دەدەن لە بۆن کردنی بۆنەکان", Sound = Properties.Resources.nose, Image = new(new Uri("./Assets/Images/Objects/Body/kapu.jpg",UriKind.Relative))},
+                 //Moments
+                new(){Name="بەهار", Description="وەرزی دڵگیر و خۆشی ساڵە", Sound = Properties.Resources.spring, Image = new(new Uri("./Assets/Images/Objects/Moments/spring.jpg",UriKind.Relative))},
+                new(){Name="زستان", Description="وەرزی سەرما و سارد و سۆڵی ساڵە", Sound = Properties.Resources.winter, Image = new(new Uri("./Assets/Images/Objects/Moments/winter.jpg",UriKind.Relative))},
+                new(){Name="پاییز", Description="وەرزی زەرد و هەڵوەرینی گەڵایە", Sound = Properties.Resources.autumn, Image = new(new Uri("./Assets/Images/Objects/Moments/autumn.jpg",UriKind.Relative))},
+                new(){Name="هاوین", Description="وەرزی گەرما و تینی ساڵە", Sound = Properties.Resources.summer, Image = new(new Uri("./Assets/Images/Objects/Moments/summer.jpg",UriKind.Relative))},
             }; 
         }
     }

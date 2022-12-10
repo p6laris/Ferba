@@ -337,5 +337,35 @@ namespace Ferba
                 sound.Play();
             }
         }
+
+        private void MomentsLeftArrowPic_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                if (MomentsTabItems.SelectedIndex >= 1)
+                    --MomentsTabItems.SelectedIndex;
+            }
+        }
+
+        private void MomentsRightArrowPic_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                if (MomentsTabItems.SelectedIndex <= MomentsTabItems.Items.Count)
+                    ++MomentsTabItems.SelectedIndex;
+
+            }
+        }
+
+        private void SoundPlayMoments_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            var index = MomentsTabItems.SelectedIndex + 45;
+            var path = Items.Value[index].Sound;
+            using (SoundPlayer sound = new(path))
+            {
+                sound.Stream.Position = 0;
+                sound.Play();
+            }
+        }
     }
 }

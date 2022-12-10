@@ -64,7 +64,7 @@ namespace Ferba.Data
                 new(){Name="گوێ", Description="بە هۆی گوێکانت هەست بە دەنگەکانی دەورووبەر دەکەی", Sound = Properties.Resources.ear, Image = new(new Uri("./Assets/Images/Objects/Body/gwe.jpg",UriKind.Relative))},
                 new(){Name="سەر", Description="سەرت بەشێکی گرنگی لەشن و مێشکیان تێدایە", Sound = Properties.Resources.head, Image = new(new Uri("./Assets/Images/Objects/Body/sar.jpg",UriKind.Relative))},
                 new(){Name="ددان", Description="ددانەکانت یارمەتیت دەن لە خواردنی خۆراک", Sound = Properties.Resources.teeth, Image = new(new Uri("./Assets/Images/Objects/Body/ddan.jpg",UriKind.Relative))},
-                new(){Name="لووت", Description="لوتەکانت یەرمەتیت دەدەن لە بۆن کردنی بۆنەکان", Sound = Properties.Resources.nose, Image = new(new Uri("./Assets/Images/Objects/Body/kapu.jpg",UriKind.Relative))},
+                new(){Name="لووت", Description="لووتت یەرمەتیت دەدەن لە بۆن کردنی بۆنەکان", Sound = Properties.Resources.nose, Image = new(new Uri("./Assets/Images/Objects/Body/kapu.jpg",UriKind.Relative))},
             }; 
         }
     }

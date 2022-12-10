@@ -23,6 +23,11 @@
     <None Remove="Assets\Images\NumbersBar.png" />
     <None Remove="Assets\Images\ObjectsBG.png" />
     <None Remove="Assets\Images\Objects\Baz.jpg" />
+    <None Remove="Assets\Images\Objects\Body\ddan.jpg" />
+    <None Remove="Assets\Images\Objects\Body\dest.jpg" />
+    <None Remove="Assets\Images\Objects\Body\gwe.jpg" />
+    <None Remove="Assets\Images\Objects\Body\kapu.jpg" />
+    <None Remove="Assets\Images\Objects\Body\sar.jpg" />
     <None Remove="Assets\Images\Objects\Clothes\Chakat.JPG" />
     <None Remove="Assets\Images\Objects\Clothes\Fanila.JPG" />
     <None Remove="Assets\Images\Objects\Clothes\Gorya.JPG" />
@@ -84,6 +89,11 @@
     <Resource Include="Assets\Images\NumbersBar.png" />
     <Resource Include="Assets\Images\ObjectsBG.png" />
     <Resource Include="Assets\Images\Objects\Baz.jpg" />
+    <Resource Include="Assets\Images\Objects\Body\ddan.jpg" />
+    <Resource Include="Assets\Images\Objects\Body\dest.jpg" />
+    <Resource Include="Assets\Images\Objects\Body\gwe.jpg" />
+    <Resource Include="Assets\Images\Objects\Body\kapu.jpg" />
+    <Resource Include="Assets\Images\Objects\Body\sar.jpg" />
     <Resource Include="Assets\Images\Objects\Clothes\Chakat.JPG" />
     <Resource Include="Assets\Images\Objects\Clothes\Fanila.JPG" />
     <Resource Include="Assets\Images\Objects\Clothes\Gorya.JPG" />

@@ -59,6 +59,12 @@ namespace Ferba.Data
                 new(){Name="شین", Sound = Properties.Resources.shin, Image = new(new Uri("./Assets/Images/Objects/Colors/shin.jpg",UriKind.Relative))},
                 new(){Name="زەرد", Sound = Properties.Resources.zard, Image = new(new Uri("./Assets/Images/Objects/Colors/zerd.jpg",UriKind.Relative))},
                 new(){Name="ڕەش", Sound = Properties.Resources.rash, Image = new(new Uri("./Assets/Images/Objects/Colors/rash.jpg",UriKind.Relative))},
+                //Body
+                new(){Name="دەست", Description="بە هۆی دەستەکانت دەتوانی شتەکان بگری و هەستیان پێ بکەی", Sound = Properties.Resources.hand, Image = new(new Uri("./Assets/Images/Objects/Body/dest.jpg",UriKind.Relative))},
+                new(){Name="گوێ", Description="بە هۆی گوێکانت هەست بە دەنگەکانی دەورووبەر دەکەی", Sound = Properties.Resources.ear, Image = new(new Uri("./Assets/Images/Objects/Body/gwe.jpg",UriKind.Relative))},
+                new(){Name="سەر", Description="سەرت بەشێکی گرنگی لەشن و مێشکیان تێدایە", Sound = Properties.Resources.head, Image = new(new Uri("./Assets/Images/Objects/Body/sar.jpg",UriKind.Relative))},
+                new(){Name="ددان", Description="ددانەکانت یارمەتیت دەن لە خواردنی خۆراک", Sound = Properties.Resources.teeth, Image = new(new Uri("./Assets/Images/Objects/Body/ddan.jpg",UriKind.Relative))},
+                new(){Name="لووت", Description="لوتەکانت یەرمەتیت دەدەن لە بۆن کردنی بۆنەکان", Sound = Properties.Resources.nose, Image = new(new Uri("./Assets/Images/Objects/Body/kapu.jpg",UriKind.Relative))},
             }; 
         }
     }

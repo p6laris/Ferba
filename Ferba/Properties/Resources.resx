@@ -151,6 +151,9 @@
   <data name="Dw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dw.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ear.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Fanila" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fanila.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -160,6 +163,9 @@
   <data name="Haft" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Haft.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="hand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hand.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Hasht" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hasht.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -168,6 +174,9 @@
   </data>
   <data name="Hazya" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hazya.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="head" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\head.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Kllaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kllaw.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -192,6 +201,9 @@
   </data>
   <data name="No" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\No.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nose.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Pantol" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pantol.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -240,6 +252,9 @@
   </data>
   <data name="Tanura" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tanura.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="teeth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\teeth.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Yak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Yak.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

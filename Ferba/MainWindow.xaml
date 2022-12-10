@@ -104,7 +104,8 @@
                         x:Name="AlphabetsBarPic"
                         Grid.Column="0"
                         Grid.Row="0"
-                        Source="./Assets/Images/AlphabetsBar.png"/>
+                        Source="./Assets/Images/AlphabetsBar.png"
+                                MouseDown="AlphabetsBarPic_MouseDown"/>
                             <Image
                         x:Name="AnimalBarPic"
                         Grid.Column="1"
@@ -115,12 +116,14 @@
                         x:Name="ClothesBarPic"
                         Grid.Column="0"
                         Grid.Row="1"
-                        Source="./Assets/Images/ClothesBar.png"/>
+                        Source="./Assets/Images/ClothesBar.png"
+                                MouseDown="ClothesBarPic_MouseDown"/>
                             <Image 
                         x:Name="NumbersBarPic"
                         Grid.Column="1"
                         Grid.Row="1"
-                        Source="./Assets/Images/NumbersBar.png"/>
+                        Source="./Assets/Images/NumbersBar.png"
+                                MouseDown="NumbersBarPic_MouseDown_1"/>
                         </Grid>
                     </TabItem>
                     <TabItem x:Name="Items2">
@@ -137,22 +140,26 @@
                         x:Name="ColorsBarPic"
                         Grid.Column="0"
                         Grid.Row="0"
-                        Source="./Assets/Images/ColorsBar.png"/>
+                        Source="./Assets/Images/ColorsBar.png"
+                                MouseDown="ColorsBarPic_MouseDown"/>
                             <Image
                         x:Name="BodyBarPic"
                         Grid.Column="1"
                         Grid.Row="0"
-                        Source="./Assets/Images/BodyBar.png"/>
+                        Source="./Assets/Images/BodyBar.png"
+                                MouseDown="BodyBarPic_MouseDown"/>
                             <Image 
                         x:Name="MomentsBarPic"
                         Grid.Column="0"
                         Grid.Row="1"
-                        Source="./Assets/Images/MomentsBar.png"/>
+                        Source="./Assets/Images/MomentsBar.png"
+                                MouseDown="MomentsBarPic_MouseDown"/>
                             <Image 
                         x:Name="NatureBarPic"
                         Grid.Column="1"
                         Grid.Row="1"
-                        Source="./Assets/Images/NatureBar.png"/>
+                        Source="./Assets/Images/NatureBar.png"
+                                MouseDown="NatureBarPic_MouseDown"/>
                         </Grid>
                     </TabItem>
                 </TabControl>
@@ -169,7 +176,19 @@
                     <RowDefinition Height="100"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
+
+                <Image x:Name="AnimalLeftArrowPic"
+                       Source="./Assets/Images/LeftArrow.png"
+                       HorizontalAlignment="Left" 
+                       Stretch="Uniform" 
+                       MouseDown="AnimalLeftArrowPic_MouseDown"/>
+                <Image x:Name="AnimalRightArrowPic" 
+                       Source="./Assets/Images/RightArrow.png" 
+                       HorizontalAlignment="Right" 
+                       Stretch="Uniform"
+                       MouseDown="AnimalRightArrowPic_MouseDown"/>
                 <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                    
                     <Image 
                     x:Name="HomePic"
                     Source="./Assets/Images/Home.png"
@@ -188,7 +207,7 @@
                     Grid.Row="1"
                     Source="./Assets/Images/ObjectsBG.png"
                     Stretch="Fill"/>
-                <TabControl Grid.Row="1" Margin="100,0,0,0" MaxHeight="400" BorderBrush="Transparent" Background="Transparent" >
+                <TabControl x:Name="AnimalTabItems" MouseDown="Window_MouseDown"  Grid.Row="1" Margin="100,0,0,0" MaxHeight="400" BorderBrush="Transparent" Background="Transparent" >
                     <TabControl.ItemContainerStyle>
                         <Style TargetType="{x:Type TabItem}">
                             <Setter Property="Visibility" Value="Collapsed"/>
@@ -204,20 +223,15 @@
                                 <!--<RowDefinition Height="*"/>-->
                             </Grid.RowDefinitions>
 
-                            <MediaElement 
-                                x:Name="BazAudio"
-                                Source="{Binding XPath=AnimalItems.Value[0].Sound }"
-                                LoadedBehavior="Manual"
-                                UnloadedBehavior="Stop"/>
                             <TextBlock
-                                Text="{Binding Path=AnimalItems.Value[0].Name}" 
+                                Text="{Binding Path=Items.Value[0].Name}" 
                                 Grid.Row="0"
                                 FontSize="32"
                                 Foreground="White"
                                 HorizontalAlignment="Center"
                                 FontFamily="Speda"/>
                             <TextBlock
-                                Text="{Binding Path=AnimalItems.Value[0].Description}" 
+                                Text="{Binding Path=Items.Value[0].Description}" 
                                 Grid.Row="1"
                                 FontSize="20"
                                 TextWrapping="WrapWithOverflow"
@@ -227,14 +241,1607 @@
                             <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
                                 <Image 
                                      Grid.Row="2"
-                                    Source="{Binding AnimalItems.Value[0].Image}"
+                                    Source="{Binding Items.Value[0].Image}"
                                     Stretch="Fill"/>
                             </Border>
-                            
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Qaz">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[1].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[1].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[1].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Papo">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[2].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[2].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[2].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="QalaRash">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[3].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[3].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[3].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Pshela">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[4].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[4].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[4].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Masi">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[5].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[5].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[5].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Papula">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[6].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[6].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[6].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Mreshk">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[7].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[7].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[7].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Maymun">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[8].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[8].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[8].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+
+                </TabControl>
+                
+            </Grid>
+        </TabItem>
+        <TabItem x:Name="ClothesTab">
+            <Grid>
+                <!--<Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Image x:Name="ClothesLeftArrowPic"
+                       Source="./Assets/Images/LeftArrow.png"
+                       HorizontalAlignment="Left" 
+                       Stretch="Uniform"
+                       MouseDown="ClothesLeftArrowPic_MouseDown"/>
+                <Image x:Name="ClothesRightArrowPic" 
+                       Source="./Assets/Images/RightArrow.png" 
+                       HorizontalAlignment="Right" 
+                       Stretch="Uniform"
+                       MouseDown="ClothesRightArrowPic_MouseDown"/>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+
+                    <Image 
+                    x:Name="HomePicCloths"
+                    Source="./Assets/Images/Home.png"
+                    MouseDown="HomePic_MouseDown"
+                    Stretch="Uniform"/>
+                    <Image 
+                    x:Name="SoundPlayClothes"
+                    Source="./Assets/Images/SoundOn.png"
+                    Stretch="Uniform"
+                        MouseDown="SoundPlayClothes_MouseDown"/>
+
+                </StackPanel>
+                <Image 
+                    Margin="100,0,0,0"
+                    Grid.Row="1"
+                    Source="./Assets/Images/ObjectsBG.png"
+                    Stretch="Fill"/>
+                <TabControl x:Name="ClothesTabItems" MouseDown="Window_MouseDown"  Grid.Row="1" Margin="100,0,0,0" MaxHeight="400" BorderBrush="Transparent" Background="Transparent" >
+                    <TabControl.ItemContainerStyle>
+                        <Style TargetType="{x:Type TabItem}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </Style>
+                    </TabControl.ItemContainerStyle>
+                    <TabItem x:Name="Pantol">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[9].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[9].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[9].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Fanila">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[10].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[10].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[10].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Kllaw">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[11].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[11].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[11].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Gorya">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[12].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[12].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[12].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Pellaw">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[13].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[13].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[13].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Chakat">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[14].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[14].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[14].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Tanura">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[15].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[15].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[15].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+                <Image Margin="1568,408,-944,-205" Grid.Row="1" Source="/Assets/Images/Objects/Clothes/Bady.JPG" Stretch="Fill"/>
+
+            </Grid>
+        </TabItem>
+        <TabItem x:Name="NatureTab">
+            <Grid>
+                <!--<Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Image x:Name="NatureLeftArrowPic"
+                       Source="./Assets/Images/LeftArrow.png"
+                       HorizontalAlignment="Left" 
+                       Stretch="Uniform" 
+                       MouseDown="NatureLeftArrowPic_MouseDown"/>
+                <Image x:Name="NatureRightArrowPic" 
+                       Source="./Assets/Images/RightArrow.png" 
+                       HorizontalAlignment="Right" 
+                       Stretch="Uniform"
+                       MouseDown="NatureRightArrowPic_MouseDown"/>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+
+                    <Image 
+                    x:Name="HomePicNature"
+                    Source="./Assets/Images/Home.png"
+                    MouseDown="HomePic_MouseDown"
+                    Stretch="Uniform"/>
+                    <Image 
+                    x:Name="SoundPlayNature"
+                    Source="./Assets/Images/SoundOn.png"
+                    Stretch="Uniform"
+                        MouseDown="SoundPlayNature_MouseDown"/>
+
+                </StackPanel>
+                <Image 
+                    Margin="100,0,0,0"
+                    Grid.Row="1"
+                    Source="./Assets/Images/ObjectsBG.png"
+                    Stretch="Fill"/>
+                <TabControl x:Name="NatureTabItems" MouseDown="Window_MouseDown"  Grid.Row="1" Margin="100,0,0,0" MaxHeight="400" BorderBrush="Transparent" Background="Transparent" >
+                    <TabControl.ItemContainerStyle>
+                        <Style TargetType="{x:Type TabItem}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </Style>
+                    </TabControl.ItemContainerStyle>
+
+                    <TabItem x:Name="Chya">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[26].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[26].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[26].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem>
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[27].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[27].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[27].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem>
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[28].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[28].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[28].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem>
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[29].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[29].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[29].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem>
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[30].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[30].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[30].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem>
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[31].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[31].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[31].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem>
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[32].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[32].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[32].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem>
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[33].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[33].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[33].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem>
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[34].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[34].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[34].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
                         </Grid>
                     </TabItem>
                 </TabControl>
 
+            </Grid>
+        </TabItem>
+        <TabItem x:Name="NumbersTab">
+            <Grid>
+                <!--<Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Image x:Name="NumbersLeftArrowPic"
+                       Source="./Assets/Images/LeftArrow.png"
+                       HorizontalAlignment="Left" 
+                       Stretch="Uniform" 
+                       MouseDown="NumbersLeftArrowPic_MouseDown"/>
+                <Image x:Name="NumbersRightArrowPic" 
+                       Source="./Assets/Images/RightArrow.png" 
+                       HorizontalAlignment="Right" 
+                       Stretch="Uniform"
+                       MouseDown="NumbersRightArrowPic_MouseDown"/>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+
+                    <Image 
+                    x:Name="HomePicNumbers"
+                    Source="./Assets/Images/Home.png"
+                    MouseDown="HomePic_MouseDown"
+                    Stretch="Uniform"/>
+                    <Image 
+                    x:Name="SoundPlayNumbers"
+                    Source="./Assets/Images/SoundOn.png"
+                    Stretch="Uniform"
+                        MouseDown="SoundPlayNumbers_MouseDown"/>
+
+                </StackPanel>
+                <Image 
+                    Margin="100,0,0,0"
+                    Grid.Row="1"
+                    Source="./Assets/Images/ObjectsBG.png"
+                    Stretch="Fill"/>
+                <TabControl x:Name="NumbersTabItems" MouseDown="Window_MouseDown"  Grid.Row="1" Margin="100,0,0,0" MaxHeight="400" BorderBrush="Transparent" Background="Transparent" >
+                    <TabControl.ItemContainerStyle>
+                        <Style TargetType="{x:Type TabItem}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </Style>
+                    </TabControl.ItemContainerStyle>
+                    <TabItem x:Name="Yak">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[16].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[16].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Dw">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[17].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[17].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Se">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[18].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[18].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Char">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[19].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[19].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Pench">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[20].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[20].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Shash">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[21].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[21].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Haft">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[22].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[22].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Hasht">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[23].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[23].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="No">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[24].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[24].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Da">
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[25].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[25].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+
+                </TabControl>
+
+            </Grid>
+        </TabItem>
+        <TabItem x:Name="AlphabetsTab">
+            <Grid>
+                <!--<Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Image x:Name="AlphabetsLeftArrowPic"
+                       Source="./Assets/Images/LeftArrow.png"
+                       HorizontalAlignment="Left" 
+                       Stretch="Uniform" />
+                <Image x:Name="AlphabetsRightArrowPic" 
+                       Source="./Assets/Images/RightArrow.png" 
+                       HorizontalAlignment="Right" 
+                       Stretch="Uniform"/>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+
+                    <Image 
+                    x:Name="HomePicAlphabets"
+                    Source="./Assets/Images/Home.png"
+                    MouseDown="HomePic_MouseDown"
+                    Stretch="Uniform"/>
+                    <Image 
+                    x:Name="SoundPlayAlphabets"
+                    Source="./Assets/Images/SoundOn.png"
+                    Stretch="Uniform"/>
+
+                </StackPanel>
+                <Image 
+                    Margin="100,0,0,0"
+                    Grid.Row="1"
+                    Source="./Assets/Images/ObjectsBG.png"
+                    Stretch="Fill"/>
+                <TabControl x:Name="AlphabetsTabItems" MouseDown="Window_MouseDown"  Grid.Row="1" Margin="100,0,0,0" MaxHeight="400" BorderBrush="Transparent" Background="Transparent" >
+                    <TabControl.ItemContainerStyle>
+                        <Style TargetType="{x:Type TabItem}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </Style>
+                    </TabControl.ItemContainerStyle>
+
+
+                </TabControl>
+
+            </Grid>
+        </TabItem>
+        <TabItem x:Name="ColorsTab">
+            <Grid>
+                <!--<Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Image x:Name="ColorsLeftArrowPic"
+                       Source="./Assets/Images/LeftArrow.png"
+                       HorizontalAlignment="Left" 
+                       Stretch="Uniform" 
+                       MouseDown="ColorsLeftArrowPic_MouseDown"/>
+                <Image x:Name="ColorsRightArrowPic" 
+                       Source="./Assets/Images/RightArrow.png" 
+                       HorizontalAlignment="Right" 
+                       Stretch="Uniform"
+                       MouseDown="ColorsRightArrowPic_MouseDown"/>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+
+                    <Image 
+                    x:Name="HomePicColors"
+                    Source="./Assets/Images/Home.png"
+                    MouseDown="HomePic_MouseDown"
+                    Stretch="Uniform"/>
+                    <Image 
+                    x:Name="SoundPlayColors"
+                    Source="./Assets/Images/SoundOn.png"
+                    Stretch="Uniform"
+                        MouseDown="SoundPlayColors_MouseDown"/>
+
+                </StackPanel>
+                <Image 
+                    Margin="100,0,0,0"
+                    Grid.Row="1"
+                    Source="./Assets/Images/ObjectsBG.png"
+                    Stretch="Fill"/>
+                <TabControl x:Name="ColorsTabItems" MouseDown="Window_MouseDown"  Grid.Row="1" Margin="100,0,0,0" MaxHeight="400" BorderBrush="Transparent" Background="Transparent" >
+                    <TabControl.ItemContainerStyle>
+                        <Style TargetType="{x:Type TabItem}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </Style>
+                    </TabControl.ItemContainerStyle>
+                    <TabItem>
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[35].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[35].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[35].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem>
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[36].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[36].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[36].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem>
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[37].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[37].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[37].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem>
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[38].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[38].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[38].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                    <TabItem>
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                                <!--<RowDefinition Height="*"/>-->
+                            </Grid.RowDefinitions>
+
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[39].Name}" 
+                                Grid.Row="0"
+                                FontSize="32"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <TextBlock
+                                Text="{Binding Path=Items.Value[39].Description}" 
+                                Grid.Row="1"
+                                FontSize="20"
+                                TextWrapping="WrapWithOverflow"
+                                Foreground="White"
+                                HorizontalAlignment="Center"
+                                FontFamily="Speda"/>
+                            <Border BorderThickness="10" BorderBrush="White" Grid.Row="2" Width="300" Height="200">
+                                <Image 
+                                     Grid.Row="2"
+                                    Source="{Binding Items.Value[39].Image}"
+                                    Stretch="Fill"/>
+                            </Border>
+
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+
+            </Grid>
+        </TabItem>
+        <TabItem x:Name="BodyTab">
+            <Grid>
+                <!--<Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Image x:Name="BodyLeftArrowPic"
+                       Source="./Assets/Images/LeftArrow.png"
+                       HorizontalAlignment="Left" 
+                       Stretch="Uniform" />
+                <Image x:Name="BodyRightArrowPic" 
+                       Source="./Assets/Images/RightArrow.png" 
+                       HorizontalAlignment="Right" 
+                       Stretch="Uniform"/>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+
+                    <Image 
+                    x:Name="HomePicBody"
+                    Source="./Assets/Images/Home.png"
+                    MouseDown="HomePic_MouseDown"
+                    Stretch="Uniform"/>
+                    <Image 
+                    x:Name="SoundPlayBody"
+                    Source="./Assets/Images/SoundOn.png"
+                    Stretch="Uniform"/>
+
+                </StackPanel>
+                <Image 
+                    Margin="100,0,0,0"
+                    Grid.Row="1"
+                    Source="./Assets/Images/ObjectsBG.png"
+                    Stretch="Fill"/>
+                <TabControl x:Name="BodyTabItems" MouseDown="Window_MouseDown"  Grid.Row="1" Margin="100,0,0,0" MaxHeight="400" BorderBrush="Transparent" Background="Transparent" >
+                    <TabControl.ItemContainerStyle>
+                        <Style TargetType="{x:Type TabItem}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </Style>
+                    </TabControl.ItemContainerStyle>
+
+
+                </TabControl>
+
+            </Grid>
+        </TabItem>
+        <TabItem x:Name="MomentsTab">
+            <Grid>
+                <!--<Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Image x:Name="MomentsLeftArrowPic"
+                       Source="./Assets/Images/LeftArrow.png"
+                       HorizontalAlignment="Left" 
+                       Stretch="Uniform" />
+                <Image x:Name="MomentsRightArrowPic" 
+                       Source="./Assets/Images/RightArrow.png" 
+                       HorizontalAlignment="Right" 
+                       Stretch="Uniform"/>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+
+                    <Image 
+                    x:Name="HomePicMoments"
+                    Source="./Assets/Images/Home.png"
+                    MouseDown="HomePic_MouseDown"
+                    Stretch="Uniform"/>
+                    <Image 
+                    x:Name="SoundPlayMoments"
+                    Source="./Assets/Images/SoundOn.png"
+                    Stretch="Uniform"/>
+
+                </StackPanel>
+                <Image 
+                    Margin="100,0,0,0"
+                    Grid.Row="1"
+                    Source="./Assets/Images/ObjectsBG.png"
+                    Stretch="Fill"/>
+                <TabControl x:Name="MomentsTabItems" MouseDown="Window_MouseDown"  Grid.Row="1" Margin="100,0,0,0" MaxHeight="400" BorderBrush="Transparent" Background="Transparent" >
+                    <TabControl.ItemContainerStyle>
+                        <Style TargetType="{x:Type TabItem}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </Style>
+                    </TabControl.ItemContainerStyle>
+
+
+                </TabControl>
 
             </Grid>
         </TabItem>

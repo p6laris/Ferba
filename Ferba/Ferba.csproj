@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\Audio\Baz.wav" />
     <None Remove="Assets\Images\AlphabetsBar.png" />
     <None Remove="Assets\Images\AnimalBar.png" />
     <None Remove="Assets\Images\background.jpg" />
@@ -24,13 +23,49 @@
     <None Remove="Assets\Images\NumbersBar.png" />
     <None Remove="Assets\Images\ObjectsBG.png" />
     <None Remove="Assets\Images\Objects\Baz.jpg" />
+    <None Remove="Assets\Images\Objects\Clothes\Chakat.JPG" />
+    <None Remove="Assets\Images\Objects\Clothes\Fanila.JPG" />
+    <None Remove="Assets\Images\Objects\Clothes\Gorya.JPG" />
+    <None Remove="Assets\Images\Objects\Clothes\Kllaw.PNG" />
+    <None Remove="Assets\Images\Objects\Clothes\Pantol.JPG" />
+    <None Remove="Assets\Images\Objects\Clothes\Pellaw.JPG" />
+    <None Remove="Assets\Images\Objects\Clothes\Tanura.jpg" />
+    <None Remove="Assets\Images\Objects\Colors\kesk.jpg" />
+    <None Remove="Assets\Images\Objects\Colors\rash.jpg" />
+    <None Remove="Assets\Images\Objects\Colors\shin.jpg" />
+    <None Remove="Assets\Images\Objects\Colors\swr.jpg" />
+    <None Remove="Assets\Images\Objects\Colors\zerd.jpg" />
+    <None Remove="Assets\Images\Objects\Masi.jpg" />
+    <None Remove="Assets\Images\Objects\Maymun.jpg" />
+    <None Remove="Assets\Images\Objects\Mreshk.jpg" />
+    <None Remove="Assets\Images\Objects\Nature\Asman.jpg" />
+    <None Remove="Assets\Images\Objects\Nature\Bard.jpg" />
+    <None Remove="Assets\Images\Objects\Nature\Chya.jpg" />
+    <None Remove="Assets\Images\Objects\Nature\Dar.jpg" />
+    <None Remove="Assets\Images\Objects\Nature\Darstan.jpg" />
+    <None Remove="Assets\Images\Objects\Nature\Dasht.jpg" />
+    <None Remove="Assets\Images\Objects\Nature\Hawr.jpg" />
+    <None Remove="Assets\Images\Objects\Nature\Mang.jpg" />
+    <None Remove="Assets\Images\Objects\Nature\Rozh.jpg" />
+    <None Remove="Assets\Images\Objects\Number\Char.jpg" />
+    <None Remove="Assets\Images\Objects\Number\Da.jpg" />
+    <None Remove="Assets\Images\Objects\Number\Dw.jpg" />
+    <None Remove="Assets\Images\Objects\Number\Haft.jpg" />
+    <None Remove="Assets\Images\Objects\Number\Hasht.jpg" />
+    <None Remove="Assets\Images\Objects\Number\No.jpg" />
+    <None Remove="Assets\Images\Objects\Number\Pench.jpg" />
+    <None Remove="Assets\Images\Objects\Number\Se.jpg" />
+    <None Remove="Assets\Images\Objects\Number\Shash.jpg" />
+    <None Remove="Assets\Images\Objects\Number\Yak.jpg" />
+    <None Remove="Assets\Images\Objects\Papo.JPG" />
+    <None Remove="Assets\Images\Objects\Papula.jpg" />
+    <None Remove="Assets\Images\Objects\Pshela.jpg" />
+    <None Remove="Assets\Images\Objects\QalaRash.JPG" />
+    <None Remove="Assets\Images\Objects\Qaz.JPG" />
+    <None Remove="Assets\Images\Objects\Sag.jpg" />
     <None Remove="Assets\Images\RightArrow.png" />
     <None Remove="Assets\Images\SoundOff.png" />
     <None Remove="Assets\Images\SoundOn.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Assets\Audio\Baz.wav" />
   </ItemGroup>
 
   <ItemGroup>
@@ -49,6 +84,46 @@
     <Resource Include="Assets\Images\NumbersBar.png" />
     <Resource Include="Assets\Images\ObjectsBG.png" />
     <Resource Include="Assets\Images\Objects\Baz.jpg" />
+    <Resource Include="Assets\Images\Objects\Clothes\Chakat.JPG" />
+    <Resource Include="Assets\Images\Objects\Clothes\Fanila.JPG" />
+    <Resource Include="Assets\Images\Objects\Clothes\Gorya.JPG" />
+    <Resource Include="Assets\Images\Objects\Clothes\Kllaw.PNG" />
+    <Resource Include="Assets\Images\Objects\Clothes\Pantol.JPG" />
+    <Resource Include="Assets\Images\Objects\Clothes\Pellaw.JPG" />
+    <Resource Include="Assets\Images\Objects\Clothes\Tanura.jpg" />
+    <Resource Include="Assets\Images\Objects\Colors\kesk.jpg" />
+    <Resource Include="Assets\Images\Objects\Colors\rash.jpg" />
+    <Resource Include="Assets\Images\Objects\Colors\shin.jpg" />
+    <Resource Include="Assets\Images\Objects\Colors\swr.jpg" />
+    <Resource Include="Assets\Images\Objects\Colors\zerd.jpg" />
+    <Resource Include="Assets\Images\Objects\Masi.jpg" />
+    <Resource Include="Assets\Images\Objects\Maymun.jpg" />
+    <Resource Include="Assets\Images\Objects\Mreshk.jpg" />
+    <Resource Include="Assets\Images\Objects\Nature\Asman.jpg" />
+    <Resource Include="Assets\Images\Objects\Nature\Bard.jpg" />
+    <Resource Include="Assets\Images\Objects\Nature\Chya.jpg" />
+    <Resource Include="Assets\Images\Objects\Nature\Dar.jpg" />
+    <Resource Include="Assets\Images\Objects\Nature\Darstan.jpg" />
+    <Resource Include="Assets\Images\Objects\Nature\Dasht.jpg" />
+    <Resource Include="Assets\Images\Objects\Nature\Hawr.jpg" />
+    <Resource Include="Assets\Images\Objects\Nature\Mang.jpg" />
+    <Resource Include="Assets\Images\Objects\Nature\Rozh.jpg" />
+    <Resource Include="Assets\Images\Objects\Number\Char.jpg" />
+    <Resource Include="Assets\Images\Objects\Number\Da.jpg" />
+    <Resource Include="Assets\Images\Objects\Number\Dw.jpg" />
+    <Resource Include="Assets\Images\Objects\Number\Haft.jpg" />
+    <Resource Include="Assets\Images\Objects\Number\Hasht.jpg" />
+    <Resource Include="Assets\Images\Objects\Number\No.jpg" />
+    <Resource Include="Assets\Images\Objects\Number\Pench.jpg" />
+    <Resource Include="Assets\Images\Objects\Number\Se.jpg" />
+    <Resource Include="Assets\Images\Objects\Number\Shash.jpg" />
+    <Resource Include="Assets\Images\Objects\Number\Yak.jpg" />
+    <Resource Include="Assets\Images\Objects\Papo.JPG" />
+    <Resource Include="Assets\Images\Objects\Papula.jpg" />
+    <Resource Include="Assets\Images\Objects\Pshela.jpg" />
+    <Resource Include="Assets\Images\Objects\QalaRash.JPG" />
+    <Resource Include="Assets\Images\Objects\Qaz.JPG" />
+    <Resource Include="Assets\Images\Objects\Sag.jpg" />
     <Resource Include="Assets\Images\RightArrow.png" />
     <Resource Include="Assets\Images\SoundOff.png" />
     <Resource Include="Assets\Images\SoundOn.png" />

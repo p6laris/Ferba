@@ -14,6 +14,7 @@ namespace Ferba.Data
         {
             return new()
             {
+                 
                 //Animals
                 new(){Name= "باز", Description = "هەڵۆ یاخود باز باڵدارێکی گۆشتخۆرە، خاوەن چاوێکی تیژە", Sound = Properties.Resources.Baz, Image = new(new Uri("./Assets/Images/Objects/Baz.jpg",UriKind.Relative))},
                 new(){Name="قاز", Description="قاز باڵدارێکی ئاوییە، ڕەنگیان سپییە.", Sound = Properties.Resources.Qaz, Image = new(new Uri("./Assets/Images/Objects/Qaz.jpg",UriKind.Relative))},
@@ -71,7 +72,7 @@ namespace Ferba.Data
                 new(){Name="پاییز", Description="وەرزی زەرد و هەڵوەرینی گەڵایە", Sound = Properties.Resources.autumn, Image = new(new Uri("./Assets/Images/Objects/Moments/autumn.jpg",UriKind.Relative))},
                 new(){Name="هاوین", Description="وەرزی گەرما و تینی ساڵە", Sound = Properties.Resources.summer, Image = new(new Uri("./Assets/Images/Objects/Moments/summer.jpg",UriKind.Relative))},
                 //Alphabets
-                 new(){Name="ا", Description="ئا بۆ ئاواز", Sound = Properties.Resources.ا, Image = new(new Uri("./Assets/Images/Objects/Alpha/A.jpg",UriKind.Relative))},
+                 new(){Name="ا", Description="ئا بۆ ئاواز", Sound = Properties.Resources.gg, Image = new(new Uri("./Assets/Images/Objects/Alpha/A.jpg",UriKind.Relative))},
                  new(){Name="ب", Description="ب بۆ باران", Sound = Properties.Resources.B, Image = new(new Uri("./Assets/Images/Objects/Alpha/b.jpg",UriKind.Relative))},
                  new(){Name="پ", Description="پ بۆ پەلکەزێڕینە", Sound = Properties.Resources.P, Image = new(new Uri("./Assets/Images/Objects/Alpha/p.jpg",UriKind.Relative))},
                  new(){Name="ه", Description="‌‌ه بۆ پەردە", Sound = Properties.Resources.ah, Image = new(new Uri("./Assets/Images/Objects/Alpha/ah.jpg",UriKind.Relative))},

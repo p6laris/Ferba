@@ -261,6 +261,15 @@ namespace Ferba.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream gg {
+            get {
+                return ResourceManager.GetStream("gg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Gorya {
             get {
                 return ResourceManager.GetStream("Gorya", resourceCulture);
@@ -723,15 +732,6 @@ namespace Ferba.Properties {
         internal static System.IO.UnmanagedMemoryStream zard {
             get {
                 return ResourceManager.GetStream("zard", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream ا {
-            get {
-                return ResourceManager.GetStream("ا", resourceCulture);
             }
         }
     }

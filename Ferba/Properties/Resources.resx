@@ -184,6 +184,9 @@
   <data name="g" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\g.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="gg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gg.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Gorya" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gorya.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -339,8 +342,5 @@
   </data>
   <data name="zard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zard.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ا" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ا.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

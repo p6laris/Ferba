@@ -6,6 +6,8 @@ namespace Ferba.Data
 {
     public class Items
     {
+        //git
+        //awha test explorer dakaywa u test akan run dakay
         public string? Name { get; set; }
         public string? Description { get; set; }
 

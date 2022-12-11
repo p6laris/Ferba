@@ -63,6 +63,33 @@ namespace Ferba.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _7_HH {
+            get {
+                return ResourceManager.GetStream("7,HH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream AA {
+            get {
+                return ResourceManager.GetStream("AA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream ah {
+            get {
+                return ResourceManager.GetStream("ah", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Asman {
             get {
                 return ResourceManager.GetStream("Asman", resourceCulture);
@@ -75,6 +102,15 @@ namespace Ferba.Properties {
         internal static System.IO.UnmanagedMemoryStream autumn {
             get {
                 return ResourceManager.GetStream("autumn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream B {
+            get {
+                return ResourceManager.GetStream("B", resourceCulture);
             }
         }
         
@@ -126,6 +162,15 @@ namespace Ferba.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream D {
+            get {
+                return ResourceManager.GetStream("D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Da {
             get {
                 return ResourceManager.GetStream("Da", resourceCulture);
@@ -171,9 +216,27 @@ namespace Ferba.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream e {
+            get {
+                return ResourceManager.GetStream("e", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream ear {
             get {
                 return ResourceManager.GetStream("ear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream f {
+            get {
+                return ResourceManager.GetStream("f", resourceCulture);
             }
         }
         
@@ -189,9 +252,27 @@ namespace Ferba.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream g {
+            get {
+                return ResourceManager.GetStream("g", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Gorya {
             get {
                 return ResourceManager.GetStream("Gorya", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream ha {
+            get {
+                return ResourceManager.GetStream("ha", resourceCulture);
             }
         }
         
@@ -252,6 +333,15 @@ namespace Ferba.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream k {
+            get {
+                return ResourceManager.GetStream("k", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Kllaw {
             get {
                 return ResourceManager.GetStream("Kllaw", resourceCulture);
@@ -264,6 +354,24 @@ namespace Ferba.Properties {
         internal static System.IO.UnmanagedMemoryStream Kras {
             get {
                 return ResourceManager.GetStream("Kras", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream L {
+            get {
+                return ResourceManager.GetStream("L", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream m {
+            get {
+                return ResourceManager.GetStream("m", resourceCulture);
             }
         }
         
@@ -315,6 +423,15 @@ namespace Ferba.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream n {
+            get {
+                return ResourceManager.GetStream("n", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream No {
             get {
                 return ResourceManager.GetStream("No", resourceCulture);
@@ -327,6 +444,24 @@ namespace Ferba.Properties {
         internal static System.IO.UnmanagedMemoryStream nose {
             get {
                 return ResourceManager.GetStream("nose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream o {
+            get {
+                return ResourceManager.GetStream("o", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream P {
+            get {
+                return ResourceManager.GetStream("P", resourceCulture);
             }
         }
         
@@ -387,6 +522,15 @@ namespace Ferba.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream q {
+            get {
+                return ResourceManager.GetStream("q", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream QalaRash {
             get {
                 return ResourceManager.GetStream("QalaRash", resourceCulture);
@@ -399,6 +543,15 @@ namespace Ferba.Properties {
         internal static System.IO.UnmanagedMemoryStream Qaz {
             get {
                 return ResourceManager.GetStream("Qaz", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream R {
+            get {
+                return ResourceManager.GetStream("R", resourceCulture);
             }
         }
         
@@ -423,6 +576,15 @@ namespace Ferba.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream S {
+            get {
+                return ResourceManager.GetStream("S", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream sawz {
             get {
                 return ResourceManager.GetStream("sawz", resourceCulture);
@@ -435,6 +597,15 @@ namespace Ferba.Properties {
         internal static System.IO.UnmanagedMemoryStream Se {
             get {
                 return ResourceManager.GetStream("Se", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream sh {
+            get {
+                return ResourceManager.GetStream("sh", resourceCulture);
             }
         }
         
@@ -504,6 +675,24 @@ namespace Ferba.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream v {
+            get {
+                return ResourceManager.GetStream("v", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream W {
+            get {
+                return ResourceManager.GetStream("W", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream winter {
             get {
                 return ResourceManager.GetStream("winter", resourceCulture);
@@ -522,9 +711,27 @@ namespace Ferba.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Z {
+            get {
+                return ResourceManager.GetStream("Z", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream zard {
             get {
                 return ResourceManager.GetStream("zard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream ا {
+            get {
+                return ResourceManager.GetStream("ا", resourceCulture);
             }
         }
     }

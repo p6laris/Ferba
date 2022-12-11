@@ -14,7 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Ferba.Models;
+using Ferba.Data;
 using System.IO.Packaging;
 using System.Media;
 
@@ -360,6 +360,37 @@ namespace Ferba
         private void SoundPlayMoments_MouseDown(object sender, MouseButtonEventArgs e)
         {
             var index = MomentsTabItems.SelectedIndex + 45;
+            var path = Items.Value[index].Sound;
+            using (SoundPlayer sound = new(path))
+            {
+                sound.Stream.Position = 0;
+                sound.Play();
+            }
+        }
+
+        private void AlphabetsLeftArrowPic_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                if (AlphabetsTabItems.SelectedIndex >= 1)
+                    --AlphabetsTabItems.SelectedIndex;
+            }
+        }
+
+        private void AlphabetsRightArrowPic_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                if (AlphabetsTabItems.SelectedIndex <= AlphabetsTabItems.Items.Count)
+                    ++AlphabetsTabItems.SelectedIndex;
+
+            }
+        }
+
+        private void SoundPlayAlphabets_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            var index = AlphabetsTabItems.SelectedIndex + 49;
             var path = Items.Value[index].Sound;
             using (SoundPlayer sound = new(path))
             {

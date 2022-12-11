@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 
-namespace Ferba.Models
+namespace Shared
 {
-    public class Items
+    public partial class Items
     {
         public string? Name { get; set; }
         public string? Description { get; set; }

@@ -1,4 +1,4 @@
-﻿using Ferba.Models;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -70,6 +70,11 @@ namespace Ferba.Data
                 new(){Name="زستان", Description="وەرزی سەرما و سارد و سۆڵی ساڵە", Sound = Properties.Resources.winter, Image = new(new Uri("./Assets/Images/Objects/Moments/winter.jpg",UriKind.Relative))},
                 new(){Name="پاییز", Description="وەرزی زەرد و هەڵوەرینی گەڵایە", Sound = Properties.Resources.autumn, Image = new(new Uri("./Assets/Images/Objects/Moments/autumn.jpg",UriKind.Relative))},
                 new(){Name="هاوین", Description="وەرزی گەرما و تینی ساڵە", Sound = Properties.Resources.summer, Image = new(new Uri("./Assets/Images/Objects/Moments/summer.jpg",UriKind.Relative))},
+                //Alphabets
+                 new(){Name="ا", Description="ئا بۆ ئاواز", Sound = Properties.Resources.ا, Image = new(new Uri("./Assets/Images/Objects/Alpha/A.jpg",UriKind.Relative))},
+                 new(){Name="ب", Description="ب بۆ باران", Sound = Properties.Resources.B, Image = new(new Uri("./Assets/Images/Objects/Alpha/b.jpg",UriKind.Relative))},
+                 new(){Name="پ", Description="پ بۆ پەلکەزێڕینە", Sound = Properties.Resources.P, Image = new(new Uri("./Assets/Images/Objects/Alpha/p.jpg",UriKind.Relative))},
+                 new(){Name="ه", Description="‌‌ه بۆ پەردە", Sound = Properties.Resources.ah, Image = new(new Uri("./Assets/Images/Objects/Alpha/ah.jpg",UriKind.Relative))},
             }; 
         }
     }
